@@ -1,5 +1,14 @@
 server:
   port: 8761
+  use-forward-headers: true
+  
+spring:
+  profiles: ide
+  boot:
+    admin:
+      ui:
+        publicUrl: localhost:9080/admin
+  
 eureka:
   instance:
     hostname: localhost        
