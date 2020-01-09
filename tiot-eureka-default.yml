@@ -1,6 +1,5 @@
 server:
   port: 8761
-  use-forward-headers: true
   
 eureka:
   instance:
