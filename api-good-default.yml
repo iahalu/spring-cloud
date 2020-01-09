@@ -13,4 +13,4 @@ spring:
     password: springcloud  
 
 test:
-  property: test4444
+  property: test5555
