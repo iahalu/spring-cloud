@@ -18,12 +18,6 @@ spring:
     baseUrl: http://127.0.0.1:9411/
   sleuth:
     enabled: false
-    sampler:
-      probability: 1.0
-
-sample:
-  zipkin:
-    enabled: false
 
 test:
   property: test6666
