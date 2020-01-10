@@ -6,6 +6,7 @@ eureka:
     hostname: localhost        
     leaseExpirationDurationInSeconds: 30
     leaseRenewalIntervalInSeconds: 10
+    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
   client:
     registerWithEureka: false
     fetchRegistry: false
