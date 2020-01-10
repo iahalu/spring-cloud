@@ -13,11 +13,11 @@ eureka:
     
 zuul:
   routes:
-#    good:
-#      path: /good/**
-#      stripPrefix: true
-#      sensitiveHeaders:
-#      serviceId: API-GOOD
+    good:
+      path: /good/**
+      stripPrefix: true
+      sensitiveHeaders:
+      serviceId: API-GOOD
     api-good:
       path: /api-good/**
       serviceId: API-GOOD
