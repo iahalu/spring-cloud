@@ -1,8 +1,6 @@
-spring:
-  zipkin:
-    baseUrl: http://localhost:9411
-  sleuth:
-    enabled: false
+  
+server:
+  use-forward-headers: true
 
 eureka:
   client:
@@ -49,3 +47,7 @@ spring:
     port: 5672
     username: springcloud
     password: springcloud
+  zipkin:
+    baseUrl: http://localhost:9411
+  sleuth:
+    enabled: false
