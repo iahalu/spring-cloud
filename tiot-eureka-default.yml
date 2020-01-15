@@ -19,3 +19,6 @@ spring:
     port: 5672
     username: springcloud
     password: springcloud
+  mvc:
+    servlet:
+      load-on-startup: 1
