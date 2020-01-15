@@ -51,3 +51,6 @@ spring:
     baseUrl: http://localhost:9411
   sleuth:
     enabled: false
+  mvc:
+    servlet:
+      load-on-startup: 1
