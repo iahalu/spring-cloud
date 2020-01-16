@@ -21,6 +21,10 @@ spring:
   mvc:
     servlet:
       load-on-startup: 1
+      
+devtools:
+    livereload:
+      enabled: true
 
 test:
   property: test6666
