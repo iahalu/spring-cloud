@@ -12,15 +12,18 @@ eureka:
     preferIpAddress: true
     
 zuul:
+  sensitive-headers:
+  - Cookie
+  - Set-Cookie   
   routes:
     good:
       path: /good/**
       stripPrefix: true
       sensitiveHeaders:
       serviceId: API-GOOD
-//    api-good:
-//      path: /api-good/**
-//      serviceId: API-GOOD
+    api-good:
+      path: /api-good/**
+      serviceId: API-GOOD
     oauth:
       path: /oauth/**
       stripPrefix: false
