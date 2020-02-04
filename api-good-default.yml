@@ -1,7 +1,12 @@
 server:
   use-forward-headers: true
 
+grpc:
+  port: 6565
+
 eureka:
+  instance:
+    nonSecurePort: ${grpc.port}
   client:
     registerWithEureka: true
     fetchRegistry: true
